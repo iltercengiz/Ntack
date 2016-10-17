@@ -10,6 +10,9 @@
 		361BA06F1DB544B3002F9EF9 /* Ntack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361BA0651DB544B3002F9EF9 /* Ntack.framework */; };
 		361BA0741DB544B3002F9EF9 /* NtackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA0731DB544B3002F9EF9 /* NtackTests.m */; };
 		361BA0761DB544B3002F9EF9 /* Ntack.h in Headers */ = {isa = PBXBuildFile; fileRef = 361BA0681DB544B3002F9EF9 /* Ntack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		361BA0821DB54506002F9EF9 /* Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 361BA0801DB54506002F9EF9 /* Stack.h */; };
+		361BA0831DB54506002F9EF9 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA0811DB54506002F9EF9 /* Stack.m */; };
+		361BA0851DB54A43002F9EF9 /* StackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA0841DB54A43002F9EF9 /* StackTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		361BA06E1DB544B3002F9EF9 /* NtackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NtackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		361BA0731DB544B3002F9EF9 /* NtackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NtackTests.m; sourceTree = "<group>"; };
 		361BA0751DB544B3002F9EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361BA0801DB54506002F9EF9 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		361BA0811DB54506002F9EF9 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		361BA0841DB54A43002F9EF9 /* StackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		361BA0671DB544B3002F9EF9 /* Ntack */ = {
 			isa = PBXGroup;
 			children = (
+				361BA07F1DB544EA002F9EF9 /* Stack */,
 				361BA0681DB544B3002F9EF9 /* Ntack.h */,
 				361BA0691DB544B3002F9EF9 /* Info.plist */,
 			);
@@ -80,10 +87,20 @@
 		361BA0721DB544B3002F9EF9 /* NtackTests */ = {
 			isa = PBXGroup;
 			children = (
+				361BA0841DB54A43002F9EF9 /* StackTests.m */,
 				361BA0731DB544B3002F9EF9 /* NtackTests.m */,
 				361BA0751DB544B3002F9EF9 /* Info.plist */,
 			);
 			path = NtackTests;
+			sourceTree = "<group>";
+		};
+		361BA07F1DB544EA002F9EF9 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				361BA0801DB54506002F9EF9 /* Stack.h */,
+				361BA0811DB54506002F9EF9 /* Stack.m */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				361BA0761DB544B3002F9EF9 /* Ntack.h in Headers */,
+				361BA0821DB54506002F9EF9 /* Stack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361BA0831DB54506002F9EF9 /* Stack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361BA0851DB54A43002F9EF9 /* StackTests.m in Sources */,
 				361BA0741DB544B3002F9EF9 /* NtackTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
