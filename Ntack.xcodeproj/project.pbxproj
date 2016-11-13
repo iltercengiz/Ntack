@@ -16,6 +16,8 @@
 		361BA0891DB5507C002F9EF9 /* Summer.h in Headers */ = {isa = PBXBuildFile; fileRef = 361BA0871DB5507C002F9EF9 /* Summer.h */; };
 		361BA08A1DB5507C002F9EF9 /* Summer.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA0881DB5507C002F9EF9 /* Summer.m */; };
 		361BA08C1DB551BA002F9EF9 /* SummerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA08B1DB551BA002F9EF9 /* SummerTests.m */; };
+		368AEF181DD89F200067253F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 368AEF171DD89F200067253F /* main.m */; };
+		36E656AB1DD8A39E00D50D79 /* Ntack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361BA0651DB544B3002F9EF9 /* Ntack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,18 @@
 			remoteInfo = Ntack;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		368AEF131DD89F200067253F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		361BA0651DB544B3002F9EF9 /* Ntack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ntack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +55,8 @@
 		361BA0871DB5507C002F9EF9 /* Summer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summer.h; sourceTree = "<group>"; };
 		361BA0881DB5507C002F9EF9 /* Summer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summer.m; sourceTree = "<group>"; };
 		361BA08B1DB551BA002F9EF9 /* SummerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummerTests.m; sourceTree = "<group>"; };
+		368AEF151DD89F200067253F /* Runner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Runner; sourceTree = BUILT_PRODUCTS_DIR; };
+		368AEF171DD89F200067253F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +75,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		368AEF121DD89F200067253F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E656AB1DD8A39E00D50D79 /* Ntack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		361BA05B1DB544B3002F9EF9 = {
 			isa = PBXGroup;
 			children = (
+				368AEF161DD89F200067253F /* Runner */,
 				361BA0671DB544B3002F9EF9 /* Ntack */,
 				361BA0721DB544B3002F9EF9 /* NtackTests */,
 				361BA0661DB544B3002F9EF9 /* Products */,
@@ -76,6 +101,7 @@
 			children = (
 				361BA0651DB544B3002F9EF9 /* Ntack.framework */,
 				361BA06E1DB544B3002F9EF9 /* NtackTests.xctest */,
+				368AEF151DD89F200067253F /* Runner */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +144,14 @@
 				361BA0881DB5507C002F9EF9 /* Summer.m */,
 			);
 			path = "Sum of pairs";
+			sourceTree = "<group>";
+		};
+		368AEF161DD89F200067253F /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				368AEF171DD89F200067253F /* main.m */,
+			);
+			path = Runner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,13 +206,30 @@
 			productReference = 361BA06E1DB544B3002F9EF9 /* NtackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		368AEF141DD89F200067253F /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368AEF191DD89F200067253F /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				368AEF111DD89F200067253F /* Sources */,
+				368AEF121DD89F200067253F /* Frameworks */,
+				368AEF131DD89F200067253F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 368AEF151DD89F200067253F /* Runner */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		361BA05C1DB544B3002F9EF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ilter Cengiz";
 				TargetAttributes = {
 					361BA0641DB544B3002F9EF9 = {
@@ -188,6 +239,11 @@
 					};
 					361BA06D1DB544B3002F9EF9 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P8EBW8LF2M;
+						ProvisioningStyle = Automatic;
+					};
+					368AEF141DD89F200067253F = {
+						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = P8EBW8LF2M;
 						ProvisioningStyle = Automatic;
 					};
@@ -205,6 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				368AEF141DD89F200067253F /* Runner */,
 				361BA0641DB544B3002F9EF9 /* Ntack */,
 				361BA06D1DB544B3002F9EF9 /* NtackTests */,
 			);
@@ -248,6 +305,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		368AEF111DD89F200067253F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368AEF181DD89F200067253F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -277,6 +342,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -327,6 +393,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -416,6 +483,22 @@
 			};
 			name = Release;
 		};
+		368AEF1A1DD89F200067253F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P8EBW8LF2M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		368AEF1B1DD89F200067253F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P8EBW8LF2M;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +518,7 @@
 				361BA07B1DB544B3002F9EF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		361BA07C1DB544B3002F9EF9 /* Build configuration list for PBXNativeTarget "NtackTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +527,16 @@
 				361BA07E1DB544B3002F9EF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368AEF191DD89F200067253F /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368AEF1A1DD89F200067253F /* Debug */,
+				368AEF1B1DD89F200067253F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
