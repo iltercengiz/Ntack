@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+// https://www.hackerrank.com/challenges/ctci-array-left-rotation
+
 @interface Rotation : NSObject
 
 - (void)run;
