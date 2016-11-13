@@ -8,16 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "Rotation.h"
+#import "Anagram.h"
 
 void runRotation() {
     Rotation *rotation = [Rotation new];
     [rotation run];
 }
 
+void runAnagram() {
+    Anagram *anagram = [Anagram new];
+    [anagram run];
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Hello, World!");
-        runRotation();
+        // runRotation();
+        runAnagram();
     }
     return 0;
 }
