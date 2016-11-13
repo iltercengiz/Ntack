@@ -10,7 +10,7 @@
 
 @interface Stack ()
 
-@property (nonatomic) NSMutableArray *stack;
+@property (atomic) NSMutableArray *stack;
 
 @end
 
@@ -47,30 +47,46 @@
 #pragma mark - Getter
 
 - (NSInteger)count {
-    return self.stack.count;
+    @synchronized (self) {
+        return self.stack.count;
+    }
 }
 
 - (BOOL)isEmpty {
-    return self.stack.count == 0;
+    @synchronized (self) {
+        return self.stack.count == 0;
+    }
 }
 
 #pragma mark - Public methods
 
 - (nullable id)pop {
-    if (self.count > 0) {
-        id object = self.stack.lastObject;
-        [self.stack removeLastObject];
-        return object;
+    @synchronized (self) {
+        if (self.count > 0) {
+            id object = self.stack.lastObject;
+            [self.stack removeLastObject];
+            return object;
+        }
+        return nil;
     }
-    return nil;
 }
 
 - (void)push:(nonnull id)object {
-    [self.stack addObject:object];
+    @synchronized (self) {
+        [self.stack addObject:object];
+    }
 }
 
 - (nullable id)peek {
-    return self.stack.lastObject;
+    @synchronized (self) {
+        return self.stack.lastObject;
+    }
+}
+
+- (nullable NSArray *)allObjects {
+    @synchronized (self) {
+        return [NSArray arrayWithArray:self.stack];
+    }
 }
 
 @end

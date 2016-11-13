@@ -10,8 +10,8 @@
 
 @interface Stack<T> : NSObject
 
-@property (nonatomic, readonly) NSInteger count;
-@property (nonatomic, readonly) BOOL isEmpty;
+@property (atomic, readonly) NSInteger count;
+@property (atomic, readonly) BOOL isEmpty;
 
 - (instancetype)initWithCapacity:(NSInteger)capacity;
 + (instancetype)stack;
@@ -20,5 +20,7 @@
 - (nullable T)pop;
 - (void)push:(nonnull T)object;
 - (nullable T)peek;
+
+- (nullable NSArray *)allObjects;
 
 @end
