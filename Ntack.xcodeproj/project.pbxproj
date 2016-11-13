@@ -16,6 +16,8 @@
 		361BA0891DB5507C002F9EF9 /* Summer.h in Headers */ = {isa = PBXBuildFile; fileRef = 361BA0871DB5507C002F9EF9 /* Summer.h */; };
 		361BA08A1DB5507C002F9EF9 /* Summer.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA0881DB5507C002F9EF9 /* Summer.m */; };
 		361BA08C1DB551BA002F9EF9 /* SummerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 361BA08B1DB551BA002F9EF9 /* SummerTests.m */; };
+		368AEF0F1DD89EF00067253F /* Rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 368AEF0D1DD89EF00067253F /* Rotation.h */; };
+		368AEF101DD89EF00067253F /* Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 368AEF0E1DD89EF00067253F /* Rotation.m */; };
 		368AEF181DD89F200067253F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 368AEF171DD89F200067253F /* main.m */; };
 		36E656AB1DD8A39E00D50D79 /* Ntack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361BA0651DB544B3002F9EF9 /* Ntack.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		361BA0871DB5507C002F9EF9 /* Summer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summer.h; sourceTree = "<group>"; };
 		361BA0881DB5507C002F9EF9 /* Summer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summer.m; sourceTree = "<group>"; };
 		361BA08B1DB551BA002F9EF9 /* SummerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummerTests.m; sourceTree = "<group>"; };
+		368AEF0D1DD89EF00067253F /* Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rotation.h; sourceTree = "<group>"; };
+		368AEF0E1DD89EF00067253F /* Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rotation.m; sourceTree = "<group>"; };
 		368AEF151DD89F200067253F /* Runner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Runner; sourceTree = BUILT_PRODUCTS_DIR; };
 		368AEF171DD89F200067253F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +113,7 @@
 		361BA0671DB544B3002F9EF9 /* Ntack */ = {
 			isa = PBXGroup;
 			children = (
+				368AEF0C1DD89EC70067253F /* Rotation */,
 				361BA07F1DB544EA002F9EF9 /* Stack */,
 				361BA0861DB55033002F9EF9 /* Sum of pairs */,
 				361BA0681DB544B3002F9EF9 /* Ntack.h */,
@@ -146,6 +151,15 @@
 			path = "Sum of pairs";
 			sourceTree = "<group>";
 		};
+		368AEF0C1DD89EC70067253F /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				368AEF0D1DD89EF00067253F /* Rotation.h */,
+				368AEF0E1DD89EF00067253F /* Rotation.m */,
+			);
+			path = Rotation;
+			sourceTree = "<group>";
+		};
 		368AEF161DD89F200067253F /* Runner */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +175,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368AEF0F1DD89EF00067253F /* Rotation.h in Headers */,
 				361BA0891DB5507C002F9EF9 /* Summer.h in Headers */,
 				361BA0761DB544B3002F9EF9 /* Ntack.h in Headers */,
 				361BA0821DB54506002F9EF9 /* Stack.h in Headers */,
@@ -292,6 +307,7 @@
 			files = (
 				361BA08A1DB5507C002F9EF9 /* Summer.m in Sources */,
 				361BA0831DB54506002F9EF9 /* Stack.m in Sources */,
+				368AEF101DD89EF00067253F /* Rotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
