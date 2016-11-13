@@ -13,6 +13,5 @@
 @interface Rotation : NSObject
 
 - (void)run;
-- (void)rotateCArray:(int *)array count:(int)count by:(int)amount;
 
 @end
