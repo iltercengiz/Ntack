@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Rotation.h"
 #import "Anagram.h"
+#import "MergeSort.h"
 
 void runRotation() {
     Rotation *rotation = [Rotation new];
@@ -20,11 +21,17 @@ void runAnagram() {
     [anagram run];
 }
 
+void runMergeSort() {
+    MergeSort *mergeSort = [MergeSort new];
+    [mergeSort run];
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Hello, World!");
         // runRotation();
-        runAnagram();
+        // runAnagram();
+        runMergeSort();
     }
     return 0;
 }

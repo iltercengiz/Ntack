@@ -21,6 +21,8 @@
 		368AEF0F1DD89EF00067253F /* Rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 368AEF0D1DD89EF00067253F /* Rotation.h */; };
 		368AEF101DD89EF00067253F /* Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 368AEF0E1DD89EF00067253F /* Rotation.m */; };
 		368AEF181DD89F200067253F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 368AEF171DD89F200067253F /* main.m */; };
+		36A6BF8E1DDB90DB0050177B /* MergeSort.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A6BF8C1DDB90DB0050177B /* MergeSort.h */; };
+		36A6BF8F1DDB90DB0050177B /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A6BF8D1DDB90DB0050177B /* MergeSort.m */; };
 		36E656AB1DD8A39E00D50D79 /* Ntack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361BA0651DB544B3002F9EF9 /* Ntack.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		368AEF0E1DD89EF00067253F /* Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rotation.m; sourceTree = "<group>"; };
 		368AEF151DD89F200067253F /* Runner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Runner; sourceTree = BUILT_PRODUCTS_DIR; };
 		368AEF171DD89F200067253F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36A6BF8C1DDB90DB0050177B /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		36A6BF8D1DDB90DB0050177B /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		361BA0671DB544B3002F9EF9 /* Ntack */ = {
 			isa = PBXGroup;
 			children = (
+				36A6BF8B1DDB90B90050177B /* Merge Sort */,
 				3642DE0F1DD8E5DD001EACB7 /* Anagram */,
 				368AEF0C1DD89EC70067253F /* Rotation */,
 				361BA07F1DB544EA002F9EF9 /* Stack */,
@@ -182,6 +187,15 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		36A6BF8B1DDB90B90050177B /* Merge Sort */ = {
+			isa = PBXGroup;
+			children = (
+				36A6BF8C1DDB90DB0050177B /* MergeSort.h */,
+				36A6BF8D1DDB90DB0050177B /* MergeSort.m */,
+			);
+			path = "Merge Sort";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -192,6 +206,7 @@
 				368AEF0F1DD89EF00067253F /* Rotation.h in Headers */,
 				361BA0891DB5507C002F9EF9 /* Summer.h in Headers */,
 				361BA0761DB544B3002F9EF9 /* Ntack.h in Headers */,
+				36A6BF8E1DDB90DB0050177B /* MergeSort.h in Headers */,
 				3642DE121DD8E5F8001EACB7 /* Anagram.h in Headers */,
 				361BA0821DB54506002F9EF9 /* Stack.h in Headers */,
 			);
@@ -320,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A6BF8F1DDB90DB0050177B /* MergeSort.m in Sources */,
 				361BA08A1DB5507C002F9EF9 /* Summer.m in Sources */,
 				361BA0831DB54506002F9EF9 /* Stack.m in Sources */,
 				368AEF101DD89EF00067253F /* Rotation.m in Sources */,
